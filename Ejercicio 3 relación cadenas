@@ -1,0 +1,20 @@
+Algoritmo ejercicio3
+	//Pide una cadena y un carácter por teclado (valida que sea un carácter) y muestra cuántas veces
+	//aparece el carácter en la cadena.
+	
+	cont<-0;
+	Escribir Sin Saltar "Introduce una cadena:"
+	Leer cad
+	
+	Escribir Sin Saltar "Introduce un carácter:"
+	Leer carac
+	
+	
+	Para posicion<-0 hasta Longitud(cad)-1 Hacer
+		Si Subcadena(cad,posicion,posicion)=carac Entonces
+			cont<-cont+1;
+		FinSi
+	FinPara
+	Escribir "En la cadena ",cad," aparecen ",cont," veces el carácter ",car,"."
+	
+FinAlgoritmo
