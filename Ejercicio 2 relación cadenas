@@ -1,18 +1,19 @@
 Algoritmo ejercicio2
 	//Realizar un programa que comprueba si una cadena leída por teclado comienza por una subcadena
-	// por teclado.
-	Escribir "Introduce la cadena"
-	Leer cad
-	Escribir "Introduce la subcadena"
-	Leer subca 
+	//introducida por teclado.
 	
-	longitudsubca<-Longitud(subca)
-	longitudcad<-Longitud(cad)
-
-	Si Subcadena(cad,0,Longitud(subca)-1)=subca Entonces
-		Escribir "La cadena comienza por la subcadena"
+	Escribir "Introduce una frase"
+	Leer frase
+	
+	Escribir "Introduce una letra"
+	Leer letra 
+	
+	i<-0
+	extrae<- Subcadena(frase,i,Longitud(letra)-1)
+	
+	Si extrae=letra Entonces
+		Escribir "La cadena comienza por la subcadena", letra
 	SiNo
-		Escribir "La cadena NO comienza por la subcadena"
-	FinSi
-	
+		Escribir "La cadena no comienza por la subcadena", letra
+	Fin Si
 FinAlgoritmo
